@@ -75,10 +75,53 @@ h1.company-name {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(/img/header-mini.jpg);
+  background-image: url("../img/header-mini.jpg");
   background-size: cover;
   background-position: center;
   -webkit-filter: sepia();
           filter: sepia();
+}
+
+.header__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__arrow {
+  display: none;
+}
+
+.header__bg-icon-one, .header__bg-icon-two {
+  position: absolute;
+  opacity: 0.2;
+  z-index: -5;
+}
+
+.header__bg-icon-one {
+  bottom: 2em;
+  right: -3em;
+  width: 50%;
+  -webkit-animation: rotate-right 55s infinite linear;
+          animation: rotate-right 55s infinite linear;
+}
+
+.header__bg-icon-two {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 500;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background: #fff;
+  z-index: 500;
 }
 /*# sourceMappingURL=main.css.map */
