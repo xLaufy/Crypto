@@ -111,4 +111,10 @@
 			}
 		}
 	}
+
+	.gallery {
+		
+		grid-template-columns: repeat(8, 1fr);
+		
+	}
 }
