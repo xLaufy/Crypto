@@ -1,3 +1,14 @@
+import { Application } from '@splinetool/runtime';
+
+const canvas = document.getElementById('canvas3d');
+const app = new Application(canvas);
+app.load('https://prod.spline.design/GyQVYEawmp5x8q2R/scene.splinecode');
+
+spline.load('https://prod.spline.design/GyQVYEawmp5x8q2R/scene.splinecode', {
+	credentials: 'include',
+	mode: 'no-cors',
+});
+
 const navMobile = document.querySelector('.nav-mobile');
 const navBtn = document.querySelector('.hamburger');
 const footerYear = document.querySelector('.footer__year');

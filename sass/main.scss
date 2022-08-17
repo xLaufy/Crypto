@@ -12,14 +12,25 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	height: 100%;
 }
 
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
 	color: $white;
-	background-color: $dark;
+	background-color: rgba(35, 35, 35, 1);
+background-image: linear-gradient(90deg, rgba(35, 35, 35, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+canvas {
+	display: block;
+	position: fixed;
+	height: 50%;
+	width: 50%;
+	z-index: 5000;
+	
+  }
+  
 
 h1.company-name {
 	margin-bottom: 0.5em;
